@@ -156,32 +156,7 @@ create procedure insertar_estudianteNuevo (in Id_estudiante varchar (10),in nomb
  call insertar_estudianteNuevo ("1710173384","Luis", "cepeda","luis@espol.edu", "0996181234", "0221645423", "1990-09-19", "DATABASE",
 							"16:00:00", "252525" );
  
- --                       UPDATE
- drop procedure if exists actualizar_idEstudiante;
-delimiter //
-create procedure actualizar_idEstudiante (in UId_estudiante varchar (10), in Id_estudiante varchar (10))
- begin 
- update
- Persona
- SET
- ceduladeidentidad = UId_estudiante
- WHERE
- ceduladeidentidad = Id_estudiante;
- update
- Estudiante
- set
- Id_estudiante=UId_estudiante
- where
- Id_estudiante=Id_estudiante;
- update 
- horarioclases
- set
- idestudiante = UId_estudiante
- where 
- idestudiante = Id_estudiante;
- end//
- delimiter ;
- call actualizar_idEstudiante ('1723481931', "1710173384"); 
+ --                       
  
  /*
  -- UPDATE
