@@ -1,14 +1,14 @@
 CREATE VIEW PersonaRegistradas
  AS SELECT nombre,apellido
- FROM Personas
- WHERE ceduladeidentidad=”0981843711”;
+ FROM Persona
+ WHERE ceduladeidentidad='0981843711';
 
-CREATE VIEW Actividad
+CREATE VIEW Actividadvista
  AS SELECT *
  FROM Actividad
- WHERE cedula_identidad=”098184843711”;
+ WHERE cedula_identidad='O918379376';
  
  CREATE VIEW horariodeestudiantes
  AS SELECT *
  FROM horarioclases
- WHERE cedula_identidad='O947919293' ;
+ WHERE idestudiante='O947919293' ;

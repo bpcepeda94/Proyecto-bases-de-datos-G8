@@ -380,9 +380,39 @@ Id_Sugerencia=dId_Sugerencia;
 end//
  delimiter ; 
  
- call eliminar_sugerencia ("12345uut")
+ call eliminar_sugerencia ("12345uut");
  
+ 
+
+DELIMITER //
+ 
+CREATE PROCEDURE Vista_Personasregistradas()
+BEGIN
+SELECT * FROM PersonaRegistradas;
+END//
+ 
+DELIMITER ;
+
+
+
+ DELIMITER //
+ 
+CREATE PROCEDURE Vista_Actividad()
+BEGIN
+SELECT * FROM Actividadvista;
+END//
+ 
+DELIMITER ;
  
  
  
 
+DELIMITER //
+ 
+CREATE PROCEDURE Vista_horarioestudiantes()
+BEGIN
+SELECT * FROM horariodeestudiantes;
+END//
+ 
+DELIMITER ;
+ 
